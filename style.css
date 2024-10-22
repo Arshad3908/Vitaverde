@@ -100,10 +100,12 @@ Common CSS
     @media only screen and (max-width:1440px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
+        width: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
+        width: auto;
     }
 }
 .fresh-produce-section_content {
@@ -138,17 +140,21 @@ Common CSS
     background-color: var(--gray_300_01);
     display: flex;
     justify-content: center;
+    width: auto;
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
+        width: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-top: var(--space-5xl);
         padding-bottom: var(--space-5xl);
+        width: auto;
     }
     @media only screen and (max-width:550px) {
         padding-top: var(--space-3xl);
         padding-bottom: var(--space-3xl);
+        width: auto;
     }
 }
 .agriculture-info-section_text-block {
@@ -618,17 +624,21 @@ Common CSS
     display: fixed;
     background-color: var(--light_green_900);
     align-items: center;
+    width: auto;
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
+        width: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-top: var(--space-5xl);
         padding-bottom: var(--space-5xl);
+        width: auto;
     }
     @media only screen and (max-width:550px) {
         padding-top: var(--space-3xl);
         padding-bottom: var(--space-3xl);
+        width: auto;
     }
 }
 .footer_row {
@@ -704,10 +714,12 @@ Common CSS
     padding-right: var(--space-6xl);
     gap: var(--space-6xl);
     display: flex;
+    width: auto;
     flex-direction: column;
-    @media only screen and (max-width:550px) {
+    @media only screen and (max-width:1050px) {
         padding-left: var(--space-3xl);
         padding-right: var(--space-3xl);
+        width: auto;
     }
 }
 .footer_divider {
