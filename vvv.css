@@ -1,0 +1,51 @@
+/* Base styles */
+.column_one {
+    margin: 20px;
+}
+
+.flex-col-center-center {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.user-profile {
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.user-profile_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Desktop (default) - row display */
+@media (min-width: 768px) {
+    .list {
+        flex-direction: row;
+    }
+}
+
+/* Mobile view - column display */
+@media (max-width: 767px) {
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .user-profile {
+        width: 50%;
+    }
+    
+    .user-profile_image {
+        width: 90%; /* Adjust the image to fit within mobile */
+    }
+}

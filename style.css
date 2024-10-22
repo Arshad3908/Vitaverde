@@ -1,0 +1,740 @@
+/*=========== TABLE OF CONTENT ==========
+1. CSS Variable
+2. Utility CSS
+3. Common CSS
+========================================*/
+/*------------------------------------
+ 1. CSS Variable
+ ------------------------------------*/
+:root{
+    /*------Color Variables------*/
+    --black_900:#051605;
+    --black_900_01:#000000;
+    --blue_gray_50:#eaecf0;
+    --gray_100:#f8f8f5;
+    --gray_300:#dbe2db;
+    --gray_300_01:#e8e7dd;
+    --gray_400:#bfc1c5;
+    --gray_400_01:#bcbbb9;
+    --gray_400_02:#cccbbd;
+    --gray_400_03:#c8c7c5;
+    --gray_600:#70706f;
+    --gray_900:#1b1c1e;
+    --gray_900_33:#11183733;
+    --light_green_900:#37440e;
+    --lime_50:#f8fccc;
+    --lime_700:#9fc4c8;
+    --white_a700:#fdfdfc;
+    --white_a700_01: #fffffff;
+    --yellow_400: #eee15b;
+
+    /*------Border radius variable------*/
+    --radius-xs:6px;
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-xl:32px;
+
+    /*------Spacing variables------*/
+    --space-xs : 4px;
+    --space-sm : 6px;
+    --space-md : 8px;
+    --space-lg : 10px;
+    --space-xl : 12px;
+    --space-2xl : 14px;
+    --space-3xl : 16px;
+    --space-4xl : 18px;
+    --space-5xl : 20px;
+    --space-6xl : 32px;
+    --space-7xl : 40px;
+    --space-8xl : 50px;
+    --space-9xl : 52px;
+    --space-10xl : 64px;
+    --space-11xl : 100px;
+    --space-12xl : 116px;
+}
+.flex-col-center-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*-------------------------
+Common CSS
+------------------------*/
+.row_one{
+  background-color: var(--gray_900_33); 
+}
+.row{
+    height: 918px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(header\ logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    @media only screen and(max-width:1440px) {
+        height: auto;
+    }
+
+    @media only screen and (max-width:1050px) {
+        height: auto;
+        padding-top: var(--space-5xl);
+        padding-bottom: var(--space-5xl);
+    }
+
+    @media only screen and (max-width:550px) {
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+    }
+}
+.fresh-produce-section {
+    color: var(--white_a700_01) !important;
+    gap: var(--space-8xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: start;
+    @media only screen and (max-width:1440px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+    @media only screen and (max-width:1050px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+}
+.fresh-produce-section_content {
+    gap: var(--space-xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: start;
+}
+.fresh-produce-section_title {
+    color: var(--white_a700_01) !important;
+    font-size: 30.6px !important;
+    line-height: 100px;
+    @media only screen and (max-width:1440px) {
+        font-size: 48px !important;
+    }
+}
+.fresh-produce-section_description {
+    color: var(--white_a700_01) !important;
+    width: 22%;
+    line-height: 12px;
+    @media only screen and (max-width:1440px) {
+       width: 100%;
+    }
+    @media only screen and (max-width:1050px) {
+        width: 100%;
+     }
+}
+.agriculture-info-section_content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--gray_300_01);
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width:1440px) {
+        padding-top: var(--space-6xl);
+        padding-bottom: var(--space-6xl);
+    }
+    @media only screen and (max-width:1050px) {
+        padding-top: var(--space-5xl);
+        padding-bottom: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+    }
+}
+.agriculture-info-section_text-block {
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width:1440px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+    @media only screen and (max-width:1050px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+}
+.agriculture-info-section_text-column {
+    gap: var(--space-12xl);
+    display: flex;
+    background-color: var(--gray_100);
+    width: 100%;
+    flex-direction: column;
+    padding: 70px 56px;
+    border-radius: var(--radius-xl);
+    @media only screen and (max-width:1440px) {
+        gap: var(--space-12xl);
+        padding-top: var(--space-6xl);
+        padding-bottom: var(--space-6xl);
+    }
+    @media only screen and (max-width:1050px) {
+        gap: 87px;
+        padding: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        gap: 58px;
+        padding: var(--space-3xl);
+    }
+}
+
+.column_title {
+   color: var(--light_green_900) !important;
+   text-align: center;
+   align-self: stretch;
+   line-height: 24px;
+   @media only screen and (max-width:1050px) {
+    font-size: 7px;
+    line-height: 7px;
+}
+}
+.column_title2 {
+    color: var(--light_green_900) !important;
+   text-align: center;
+   align-self: stretch;
+   line-height: 24px;
+   @media only screen and (max-width:1050px) {
+    font-size: 14px;
+    line-height: 10px;
+}
+}
+
+.column_description {
+    color: var(--black_900_01) !important;
+    font-weight: 50 !important;
+}
+.column_description2 {
+    color: var(--black_900_01) !important;
+    font-weight: 50 !important;
+    @media only screen and (max-width:1050px) {
+        color: var(--black_900_01) !important;
+        font-weight: 50 !important;
+    }
+}
+.agriculture-info-section_image-block {
+    background-color: var(--white_a700_01);
+    display: flex;
+    align-items: center;
+    padding: var(--space-9xl);
+    border-radius: var(--radius-lg);
+    @media only screen and (max-width:1050px) {
+        flex-direction: column;
+        padding: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        padding: var(--space-3xl);
+    }
+}
+.agriculture-info-section_image-column {
+    gap: var(--space-7xl);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    @media only screen and (max-width:1050px) {
+        align-self: stretch;
+    }
+}
+.agriculture-info-section_text-wrapper {
+    margin-left: 178px;
+    margin-right: 178px;
+    gap: var(--space-4xl);
+    @media only screen and (max-width:1050px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.agriculture-info-section_text-wrapper {
+    margin-left: 178px;
+    margin-right: 178px;
+    gap: var(--space-4xl);
+    @media only screen and (max-width:1050px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.agriculture-info-section_image-text-wrapper {
+    gap: var(--space-3xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: start;
+}
+.home-page-row-four_title {
+    color: var(--light_green_900) !important;
+    @media only screen and (max-width: 1050px) {
+        font-size: 15px;   
+    }
+    @media only screen and (max-width: 550px) {
+        font-size: 15px;   
+    }
+}
+.agriculture-info-section_image-description {
+    color: var(--black_900_01) !important;
+    width: 82%;
+    line-height: 22px;
+
+    @media only screen and (max-width:1440px) {
+        width: 100%;
+        line-height: 12px;
+    }
+
+    @media only screen and (max-width:1050px) {
+        width: 100%;
+    }
+}
+.fresh-produce-section_button {
+    color: var(--gray_900) !important;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    gap: var(--space-3xl);
+    background-color: var(--yellow_400) !important;
+    height: 23px;
+    min-width: 50px;
+    border-radius: 16px !important;
+    @media only screen and (max-width:1440px) {
+        font-size: 13px;
+    }
+    @media only screen and (max-width:550px) {
+        padding-left: var(--space-3xl);
+        padding-right: var(--space-3xl);
+    }
+}
+.biarrow-left-4 {
+    height: 16px;
+    margin-top: 2px;
+    width: 16px;
+}
+.agriculture-info-section_image {
+    height: 354px;
+    width: 46%;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    @media only screen and (max-width:1050px) {
+        width: 30%;
+    }
+}
+.column {
+    padding-left: 56px;
+    padding-right: 56px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width:1440px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+}
+.list {
+    gap: var(--space-7xl);
+    display: flex;
+    @media only screen and (max-width:1050px) {
+        display: block;
+    }
+}
+.user-profile {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width:1050px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+}
+.user-profile_title {
+    color: var(--gray_600);
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+    background-color: var(--white_a700_01);
+    padding: var(--space-6xl) 34px var(--space-6xl) var(--space-6xl);
+    @media only screen and (max-width:550px) {
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+        padding-right: var(--space-3xl);
+    }
+}
+.user-profile_image {
+    height: 360px;
+    object-fit: cover;
+    display: flex;
+    width: 50%;
+    @media only screen and (max-width:1440px) {
+        height: 50px;
+        width: 50%;
+      
+    }
+}
+.user-profile_description {
+    color: var(--gray_600) !important;
+    border-bottom-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+    background-color: var(--white_a700_01);
+    padding: var(--space-6xl) 34px var(--space-6xl) var(--space-6xl);
+    @media only screen and (max-width:550px) {
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+        padding-right: var(--space-3xl);
+    }
+}
+.home-page-row-four_list {
+    background-color: var(--gray_300_01);
+    display: flex;
+    flex-direction: column;
+}
+.home-page-row-four_list-item {
+    padding-top: var(--space-8xl);
+    padding-bottom: var(--space-8xl);
+    background-color: var(--gray_100);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--lime_700);
+    @media only screen and (max-width:1050px) {
+        padding: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        padding: var(--space-3xl) var(--space-5xl);
+    }
+}
+.row-1{
+    padding-top: var(--space-8xl);
+    padding-bottom: var(--space-8xl);
+    border-top-width: 1px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--lime_700);
+    @media only screen and (max-width:1050px) {
+        padding: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        padding:var(--space-3xl) var(--space-5xl);
+    }
+}
+.home-page-row-four_content {
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-5xl);
+    @media only screen and (max-width:1440px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+    @media only screen and (max-width:1050px) {
+       flex-direction: column;
+    }
+}
+.home-page-row-four_image {
+    height: 346px;
+    width: 38%;
+    object-fit: contain;
+    border-radius: var(--radius-xs);
+    @media only screen and (max-width:1050px) {
+        width: 30%;
+        height: 100px;
+    }
+}
+.home-page-row-four_details {
+    gap: var(--space-7xl);
+    display: flex;
+    width: 54%;
+    flex-direction: column;
+    align-items: start;
+    @media only screen and (max-width:1050px) {
+        width: 30%;
+    }
+}
+.home-page-row-four_text-wrapper {
+    gap: var(--space-lg);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.home-page-row-four_subtitle {
+    color: var(--gray_900) !important;
+}
+.biarrow-left-1 {
+    height: 16px;
+    margin-bottom: 2px;
+    width: 16px;
+}
+.contact-section {
+    padding-top: 174px;
+    padding-bottom: 174px;
+    background-color: var(--gray_300_01);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    @media only screen and (max-width:1440px) {
+        padding-top: var(--space-6xl);
+        padding-bottom: var(--space-6xl);
+        width: 100%;
+        height: auto;
+    }
+    @media only screen and (max-width:1050px) {
+        padding-top: var(--space-5xl);
+        padding-bottom: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+    }
+}
+.contact-section_content {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: var(--space-5xl);
+    @media only screen and (max-width:1440px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+
+    @media only screen and (max-width:1050px) {
+        flex-direction: column;
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+}
+.contact-section_heading {
+    color: var(--black_900) !important;
+    margin-top: 4px;
+    @media only screen and (max-width:1440px) {
+        font-size: 20px;
+    }
+}
+.contact-us-section {
+    margin-left: 96px;
+    margin-right: 96px;
+    gap: var(--space-5xl);
+    display: flex;
+    width: 74%;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width:1440px) {
+        width: 50%;
+    }
+    @media only screen and (max-width:1050px) {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.contact-us-section_title {
+    color: var(--black_900) !important;
+    text-align: center;
+    align-self: stretch;
+    line-height: 25px;
+    @media only screen and (max-width:1050px) {
+        font-size: 14px;
+    }
+    @media only screen and (max-width:550px) {
+        font-size: 9px;
+    }
+}
+.contact-us-section_subtitle {
+    color:  var(--gray_600) !important;
+    font-weight: 25 !important;
+}
+.contact-us-section_info{
+    gap: var(--space-5xl);
+    display: flex;
+    align-self: stretch;
+}
+
+.material-symbolsmail-rounded {
+    height: 10px;
+    width: 10px;
+}
+.contact-section_description {
+    font-weight: 50 !important;
+}
+.contact-section_input-group {
+    gap: var(--space-5xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+}
+.contact-section_input-wrapper--name {
+    gap: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+} 
+.contact-section_input--name {
+    color: var(--gray_400) !important;
+    padding-left: var(--space-2xl);
+    padding-right: var(--space-2xl);
+    background-color: var(--white_a700) !important;
+    height: 22px;
+    border-radius: 8px !important;
+}
+.contact-section_input-wrapper--message {
+    gap: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.contact-section_textarea--message {
+    color: var(--gray_400);
+    font-size: 6px;
+    background-color: var(--white_a700) !important;
+    align-self: stretch;
+    height: 140px;
+    padding: var(--space-2xl);
+    border-radius: 8px !important;
+    border: 1px solid var(--gray_400_03) !important;
+}
+.contact-section_textarea--message {
+    @media only screen and (max-width:1440px) {
+        height: 50px;
+        font-size: 10px;
+    }
+}
+.footer {
+    padding-top: var(--space-10xl);
+    padding-bottom: var(--space-10xl);
+    display: fixed;
+    background-color: var(--light_green_900);
+    align-items: center;
+    @media only screen and (max-width:1440px) {
+        padding-top: var(--space-6xl);
+        padding-bottom: var(--space-6xl);
+    }
+    @media only screen and (max-width:1050px) {
+        padding-top: var(--space-5xl);
+        padding-bottom: var(--space-5xl);
+    }
+    @media only screen and (max-width:550px) {
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+    }
+}
+.footer_row {
+    margin-bottom: 8px;
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width:1440px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+    @media only screen and (max-width:1050px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+}
+.footer_column {
+    gap: var(--space-10xl);
+    display: flex;
+    width: 86%;
+    flex-direction: column;
+    @media only screen and (max-width:1440px) {
+        width: 15%;
+    }
+    @media only screen and (max-width:1050px) {
+        width: 15%;
+    }
+    @media only screen and (max-width:550px) {
+        gap: var(--space-6xl);
+    }
+}
+.footer_content {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-left: 56px;
+    padding-right: 56px;
+    gap: var(--space-6xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width:1050px) {
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    @media only screen and (max-width:550px) {
+        padding-left: var(--space-3xl);
+        padding-right: var(--space-3xl);
+        
+    }
+}
+.footer_logo {
+    height: 84px;
+    width: 84px;
+    object-fit: center;
+}
+.footer_logo {
+    @media only screen and (max-width:550px) {
+        height: 20px;
+        width: 20px;
+        object-fit: center;
+    }
+}
+.footer_link-row {
+    gap: var(--space-6xl);
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_cotainer {
+    padding-left: var(--space-6xl);
+    padding-right: var(--space-6xl);
+    gap: var(--space-6xl);
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width:550px) {
+        padding-left: var(--space-3xl);
+        padding-right: var(--space-3xl);
+    }
+}
+.footer_divider {
+    height: 1px;
+    background-color: var(--blue_gray_50);
+}
+.footer_content-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-5xl);
+    @media only screen and (max-width:550px) {
+        flex-direction: column;
+    }
+}
+.footer_links {
+    gap: var(--space-3xl);
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_copyright {
+    font-family: inter !important;
+    font-weight: 50 !important;
+}
+.footer_copyright {
+    @media only screen and (max-width:1050px) {
+        font-family: inter !important;
+        font-weight: 50 !important;
+    }
+}

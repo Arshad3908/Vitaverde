@@ -1,0 +1,245 @@
+:root{
+    /*------Color Variables------*/
+    --black_900:#051605;
+    --black_900_01:#000000;
+    --blue_gray_50:#eaecf0;
+    --gray_100:#f8f8f5;
+    --gray_300:#dbe2db;
+    --gray_300_01:#e8e7dd;
+    --gray_400:#bfc1c5;
+    --gray_400_01:#bcbbb9;
+    --gray_400_02:#cccbbd;
+    --gray_400_03:#c8c7c5;
+    --gray_600:#70706f;
+    --gray_900:#1b1c1e;
+    --gray_900_33:#11183733;
+    --light_green_900:#37440e;
+    --lime_50:#f8fccc;
+    --lime_700:#9fc4c8;
+    --white_a700:#fdfdfc;
+    --white_a700_01: #fffffff;
+    --yellow_400: #eee15b;
+
+    /*------Border radius variable------*/
+    --radius-xs:6px;
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --radius-xl:32px;
+
+    /*------Spacing variables------*/
+    --space-xs : 4px;
+    --space-sm : 6px;
+    --space-md : 8px;
+    --space-lg : 10px;
+    --space-xl : 12px;
+    --space-2xl : 14px;
+    --space-3xl : 16px;
+    --space-4xl : 18px;
+    --space-5xl : 20px;
+    --space-6xl : 32px;
+    --space-7xl : 40px;
+    --space-8xl : 50px;
+    --space-9xl : 52px;
+    --space-10xl : 64px;
+    --space-11xl : 100px;
+    --space-12xl : 116px;
+}
+
+.ui.textarea.round {
+    border-radius: var(--radius-sm);
+}
+.ui.textarea.size-xs {
+    height: 140px;
+    font-size: 12px;
+    padding: var(--space-2xl);
+}
+.ui.textarea.taroutlinegray40003.white_a700 {
+    background-color: var(--white_a700);
+    border: 1px solid var(--gray-400_03) !important;
+}
+.ui.input.round {
+    border-radius: var(--radius-sm);
+}
+.ui.input.size-xs {
+    height: 44px;
+    padding-left: var(--space-2xl);
+    padding-right: var(--space-2xl);
+    font-size: 12px;
+}
+.ui.input.fill.white_a700 {
+    background-color: var (--white_a700);
+    color: var(--gray-400);
+}
+.ui.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    color: var(--gray-400);
+    font-size: 12px;
+    background-color: var(--white_a700);
+    align-self: stretch;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--gray-400_03);
+}
+
+/*-----Button----*/
+.ui.button.round {
+    border-radius: var(--radius-md);
+}
+.ui.button.size-md {
+    height: 68px;
+    padding-left: var(--space-6xl);
+    padding-right: var(--space-6xl);
+    font-size: 20px;
+}
+.ui.button.size-xs {
+    height: 40px;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    font-size: 16px;
+}
+.ui.button.size-sm {
+    height: 56px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+}
+.ui.button.fill.lime_50 {
+    background-color: var(--lime_50);
+    color: var(--lime_700);
+}
+.ui.button.fill.yellow_400 {
+    background-color: var(--yelllow_400);
+    color: var(--gray_900);
+}
+.ui.btton {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.ui.text.size-textxs {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+.ui.text {
+    color: var(--gray_600);
+    font-family: Archivo;
+}
+/*----Heading CSS----*/
+.ui.heading.size-textmd {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 13px;
+    }
+}
+.ui.heading.size-textlg {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 17px;
+    }
+}
+.ui.heading.size-textxl {
+    font-size: 64px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 64px;
+    }
+    @media only screen and (max-width:1050px) {
+        font-size: 48px;
+    }
+}
+.ui.heading.size-text2xl {
+    font-size: 97px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 97px;
+    }
+    @media only screen and (max-width:1050px) {
+        font-size: 48px;
+    }
+}
+.ui.heading.size-headingxs {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 13px;
+    }
+}
+.ui.heading.size-headings {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 17px;
+    }
+    @media only screen and (max-width:1050px) {
+        font-size: 48px;
+    }
+}
+.ui.heading.size-headingmd {
+    font-size: 36px;
+    font-weight: 600;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 30px;
+    }
+    @media only screen and (max-width:1050px) {
+        font-size: 34px;
+    }
+    @media only screen and (max-width:550px) {
+        font-size: 32px;
+    }
+}
+.ui.heading.size-headinglg {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 34px;
+    }
+    @media only screen and (max-width:1050px) {
+        font-size: 38px;
+    }
+    @media only screen and (max-width:550px) {
+        font-size: 36px;
+    }
+}
+.ui.heading.size-headingxl {
+    font-size: 48px;
+    font-weight: 600;
+    font-style: bold;
+    @media only screen and (max-width:1440px) {
+        font-size: 40px;
+    }
+    @media only screen and (max-width:1050px) {
+        font-size: 44px;
+    }
+    @media only screen and (max-width:550px) {
+        font-size: 38px;
+    }
+}
+.ui.heading {
+    color: var(--gray_300);
+    font-family: Archivo;
+}
+/*----Container heading----*/
+.container-xs {
+    max-width: 1608px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

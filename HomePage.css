@@ -1,0 +1,194 @@
+/*===========TABLE OF CONTENT===========
+1.Common CSS
+2.Page CSS
+======================*/
+
+/*-------------------------------------
+1.Common CSS
+--------------------------------------*/
+.header_menu{
+    gap: var(--space-11xl);
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and(max-width: 1440px) {
+        gap: var(--space-5xl);
+    }
+
+    @media only screen and(max-width: 1050px) {
+        gap: var(--space-5xl);
+    }
+}
+
+/*-------------------------------
+2.Page CSS
+------------------------------*/
+.home-page{
+    @media only screen and(max-width: 1440px) {
+    width: 45%;
+    }
+}
+.home-page{
+    width: 100%;
+}
+
+.homepage{
+    background-color: var(--white_a700_01);
+}
+
+
+.rowheaderlogo_columnhome {
+    gap: 132px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and(max-width: 1440px) {
+        gap: 20px;
+    }
+}
+
+.header{
+    display: flex;
+    background-color: var(--white_a700_01);
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-5xl);
+    padding: 24px 250px;
+    border-radius: var(--radius-md);
+    @media only screen and(max-width: 1440px) {
+        padding-left: var(--space-6xl);
+        padding-right: var(--space-6xl);
+    }
+
+    @media only screen and(max-width: 1050px) {
+        flex-direction: column;
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+    }
+
+    @media only screen and(max-width: 550px) {
+        padding: var(--space-3xl);
+    }
+}
+
+.header_logo {
+    height: 76px;
+    width: 76px;
+    object-fit: contain;
+}
+.header_logo {
+    @media only screen and(max-width: 1050px) {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    }
+}
+
+.column_one {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 80px;
+    overflow: auto;
+    background-color: var(--gray_400_02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and(max-width: 1440px) {
+        gap: 30px;
+        padding-top: var(--space-6xl);
+        padding-bottom: var(--space-6xl);
+    }
+
+    @media only screen and(max-width: 1050px) {
+        gap: 30px;
+        padding-top: var(--space-5xl);
+        padding-bottom: var(--space-5xl);
+    }
+
+    @media only screen and(max-width: 550px) {
+        gap: var(--space-7xl);
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
+    }
+}
+
+.column_content{
+    margin-right: 12px;
+    padding-left: 56px;
+    padding-right: 56px;
+    gap: var(--space-4xl);
+    width: 76%;
+    @media only screen and(max-width: 1440px) {
+        width: 250%;
+    }
+
+    @media only screen and(max-width: 1050px) {
+        width: 25%;
+        padding-left: var(--space-5xl);
+        padding-right: var(--space-5xl);
+        margin-right: 0px;
+    }
+
+    @media only screen and(max-width: 550px) {
+        padding-left: var(--space-3xl);
+        padding-right: var(--space-3xl);
+    }
+}
+
+.contact-section_form {
+    gap: var(--space-7xl);
+    align-self: center;
+    background-color: var(--gray_100);
+    display: flex;
+    width: 58%;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-9xl);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray_400_01);
+    @media only screen and(max-width: 1050px) {
+        width: 50%;
+        padding: var(--space-5xl);
+    }
+
+    @media only screen and(max-width: 550px) {
+        padding: var(--space-3xl);
+    }
+}
+
+.contact-section_form-fields {
+    gap: var(--space-7xl);
+    background-color: var(--white_a700_01);
+    width: 100%;
+    padding: var(--space-7xl);
+    border-radius: var(--radius-sm);
+    @media only screen and(max-width: 1440px) {
+        width: 50%;
+        padding: var(--space-3xl);
+    }
+}
+.contact-section_button--send{
+    color: var(--gray_900) !important;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--yellow_400) !important;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 16px !important;
+    @media only screen and(max-width: 1440px) {
+        font-size: 13px;
+    }
+    
+    @media only screen and(max-width: 550px) {
+        padding-left: var(--space-3xl);
+        padding-right: var(--space-3xl);
+    }
+}
+.contact-section_input-group {
+    @media only screen and(max-width: 1440px) {
+        min-width: 50px;
+    }
+}
