@@ -28,11 +28,6 @@
     }
 }
 .home-page{
-    @media only screen and(max-width: 812px) {
-    width: 500%;
-    }
-}
-.home-page{
     width: 100%;
 }
 
