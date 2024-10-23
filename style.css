@@ -6,86 +6,90 @@
 /*------------------------------------
  1. CSS Variable
  ------------------------------------*/
- :root{
+ :root {
     /*------Color Variables------*/
-    --black_900:#051605;
-    --black_900_01:#000000;
-    --blue_gray_50:#eaecf0;
-    --gray_100:#f8f8f5;
-    --gray_300:#dbe2db;
-    --gray_300_01:#e8e7dd;
-    --gray_400:#bfc1c5;
-    --gray_400_01:#bcbbb9;
-    --gray_400_02:#cccbbd;
-    --gray_400_03:#c8c7c5;
-    --gray_600:#70706f;
-    --gray_900:#1b1c1e;
-    --gray_900_33:#11183733;
-    --light_green_900:#37440e;
-    --lime_50:#f8fccc;
-    --lime_700:#9fc4c8;
-    --white_a700:#fdfdfc;
-    --white_a700_01: #fffffff;
+    --black_900: #051605;
+    --black_900_01: #000000;
+    --blue_gray_50: #eaecf0;
+    --gray_100: #f8f8f5;
+    --gray_300: #dbe2db;
+    --gray_300_01: #e8e7dd;
+    --gray_400: #bfc1c5;
+    --gray_400_01: #bcbbb9;
+    --gray_400_02: #cccbbd;
+    --gray_400_03: #c8c7c5;
+    --gray_600: #70706f;
+    --gray_900: #1b1c1e;
+    --gray_900_33: #11183733;
+    --light_green_900: #37440e;
+    --lime_50: #f8fccc;
+    --lime_700: #9fc4c8;
+    --white_a700: #fdfdfc;
+    --white_a700_01: #ffffff; /* corrected */
     --yellow_400: #eee15b;
 
     /*------Border radius variable------*/
-    --radius-xs:6px;
-    --radius-sm:8px;
-    --radius-md:16px;
-    --radius-lg:24px;
-    --radius-xl:32px;
+    --radius-xs: 6px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
 
     /*------Spacing variables------*/
-    --space-xs : 4px;
-    --space-sm : 6px;
-    --space-md : 8px;
-    --space-lg : 10px;
-    --space-xl : 12px;
-    --space-2xl : 14px;
-    --space-3xl : 16px;
-    --space-4xl : 18px;
-    --space-5xl : 20px;
-    --space-6xl : 32px;
-    --space-7xl : 40px;
-    --space-8xl : 50px;
-    --space-9xl : 52px;
-    --space-10xl : 64px;
-    --space-11xl : 100px;
-    --space-12xl : 116px;
+    --space-xs: 4px;
+    --space-sm: 6px;
+    --space-md: 8px;
+    --space-lg: 10px;
+    --space-xl: 12px;
+    --space-2xl: 14px;
+    --space-3xl: 16px;
+    --space-4xl: 18px;
+    --space-5xl: 20px;
+    --space-6xl: 32px;
+    --space-7xl: 40px;
+    --space-8xl: 50px;
+    --space-9xl: 52px;
+    --space-10xl: 64px;
+    --space-11xl: 100px;
+    --space-12xl: 116px;
 }
-.flex-col-center-center{
+
+.flex-col-center-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 /*-------------------------
 Common CSS
 ------------------------*/
-.row_one{
-  background-color: var(--gray_900_33); 
+.row_one {
+    background-color: var(--gray_900_33);
 }
-.row{
+
+.row {
     height: 918px;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(header\ logo.png);
+    background-image: url(header\ logo.png); /* corrected path */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: start;
-    @media only screen and(max-width:1440px) {
+    
+    @media only screen and (max-width: 1440px) { /* corrected media query */
         height: auto;
     }
 
-    @media only screen and (max-width:1050px) {
+    @media only screen and (max-width: 1050px) {
         height: auto;
         padding-top: var(--space-5xl);
         padding-bottom: var(--space-5xl);
     }
 
-    @media only screen and (max-width:550px) {
+    @media only screen and (max-width: 550px) {
         padding-top: var(--space-3xl);
         padding-bottom: var(--space-3xl);
     }
@@ -97,12 +101,9 @@ Common CSS
     align-self: stretch;
     flex-direction: column;
     align-items: start;
-    width: auto;
     @media only screen and (max-width:1440px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
-        width: 100%;
-        height: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-left: var(--space-5xl);
@@ -118,7 +119,7 @@ Common CSS
 }
 .fresh-produce-section_title {
     color: var(--white_a700_01) !important;
-    font-size: 30.6px !important;
+    font-size: 97.6px !important;
     line-height: 100px;
     @media only screen and (max-width:1440px) {
         font-size: 48px !important;
@@ -126,7 +127,7 @@ Common CSS
 }
 .fresh-produce-section_description {
     color: var(--white_a700_01) !important;
-    width: 22%;
+    width: 44%;
     line-height: 12px;
     @media only screen and (max-width:1440px) {
        width: 100%;
@@ -141,12 +142,9 @@ Common CSS
     background-color: var(--gray_300_01);
     display: flex;
     justify-content: center;
-    width: auto;
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
-        width: 100%;
-        height: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-top: var(--space-5xl);
@@ -196,33 +194,33 @@ Common CSS
    color: var(--light_green_900) !important;
    text-align: center;
    align-self: stretch;
-   line-height: 24px;
+   line-height: 64px;
    @media only screen and (max-width:1050px) {
-    font-size: 7px;
-    line-height: 7px;
+    font-size: 14px;
+    line-height: 14px;
 }
 }
 .column_title2 {
     color: var(--light_green_900) !important;
    text-align: center;
    align-self: stretch;
-   line-height: 24px;
+   line-height: 64px;
    @media only screen and (max-width:1050px) {
     font-size: 14px;
-    line-height: 10px;
+    line-height: 28px;
 }
 }
 
 .column_description {
     color: var(--black_900_01) !important;
-    font-weight: 50 !important;
+    font-weight: 400 !important;
 }
 .column_description2 {
     color: var(--black_900_01) !important;
-    font-weight: 50 !important;
+    font-weight: 400 !important;
     @media only screen and (max-width:1050px) {
         color: var(--black_900_01) !important;
-        font-weight: 50 !important;
+        font-weight: 100 !important;
     }
 }
 .agriculture-info-section_image-block {
@@ -253,16 +251,7 @@ Common CSS
     margin-left: 178px;
     margin-right: 178px;
     gap: var(--space-4xl);
-    @media only screen and (max-width:1050px) {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
-.agriculture-info-section_text-wrapper {
-    margin-left: 178px;
-    margin-right: 178px;
-    gap: var(--space-4xl);
-    @media only screen and (max-width:1050px) {
+    @media only screen and (max-width: 1050px) {
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -278,10 +267,10 @@ Common CSS
 .home-page-row-four_title {
     color: var(--light_green_900) !important;
     @media only screen and (max-width: 1050px) {
-        font-size: 15px;   
+        font-size: 30px;   
     }
     @media only screen and (max-width: 550px) {
-        font-size: 15px;   
+        font-size: 28px;   
     }
 }
 .agriculture-info-section_image-description {
@@ -549,17 +538,17 @@ Common CSS
     color: var(--black_900) !important;
     text-align: center;
     align-self: stretch;
-    line-height: 25px;
+    line-height: 53px;
     @media only screen and (max-width:1050px) {
         font-size: 14px;
     }
     @media only screen and (max-width:550px) {
-        font-size: 9px;
+        font-size: 19px;
     }
 }
 .contact-us-section_subtitle {
     color:  var(--gray_600) !important;
-    font-weight: 25 !important;
+    font-weight: 50 !important;
 }
 .contact-us-section_info{
     gap: var(--space-5xl);
@@ -618,19 +607,17 @@ Common CSS
         font-size: 10px;
     }
 }
+
 .footer {
     padding-top: var(--space-10xl);
     padding-bottom: var(--space-10xl);
     display: fixed;
     background-color: var(--light_green_900);
     align-items: center;
-    width: auto;
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
-        width: 400%;
     }
-   
     @media only screen and (max-width:1050px) {
         padding-top: var(--space-5xl);
         padding-bottom: var(--space-5xl);
@@ -646,16 +633,13 @@ Common CSS
     padding-right: 56px;
     display: flex;
     justify-content: center;
-    width: auto;
     @media only screen and (max-width:1440px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
-        width: 400%;
     }
     @media only screen and (max-width:1050px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
-        width: 400%;
     }
 }
 .footer_column {
@@ -664,10 +648,10 @@ Common CSS
     width: 86%;
     flex-direction: column;
     @media only screen and (max-width:1440px) {
-        width: 400%;
+        width: 45%;
     }
     @media only screen and (max-width:1050px) {
-        width: 400%;
+        width: 45%;
     }
     @media only screen and (max-width:550px) {
         gap: var(--space-6xl);
@@ -701,8 +685,8 @@ Common CSS
 }
 .footer_logo {
     @media only screen and (max-width:550px) {
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
         object-fit: center;
     }
 }
@@ -717,11 +701,9 @@ Common CSS
     gap: var(--space-6xl);
     display: flex;
     flex-direction: column;
-    width: auto;
     @media only screen and (max-width:550px) {
         padding-left: var(--space-3xl);
         padding-right: var(--space-3xl);
-        width: 400%;
     }
 }
 .footer_divider {
@@ -733,11 +715,8 @@ Common CSS
     justify-content: space-between;
     align-items: center;
     gap: var(--space-5xl);
-    width: auto;
     @media only screen and (max-width:550px) {
         flex-direction: column;
-        align-self: start;
-        width: 400%;
     }
 }
 .footer_links {
@@ -747,12 +726,11 @@ Common CSS
 }
 .footer_copyright {
     font-family: inter !important;
-    font-weight: 50 !important;
+    font-weight: 400 !important;
 }
 .footer_copyright {
     @media only screen and (max-width:1050px) {
         font-family: inter !important;
-        font-weight: 50 !important;
-       
+        font-weight: 100 !important;
     }
 }
