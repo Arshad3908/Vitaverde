@@ -24,7 +24,7 @@
 ------------------------------*/
 .home-page{
     @media only screen and(max-width: 1440px) {
-    width: 100%;
+    width: 10%;
     }
 }
 .home-page{
