@@ -6,7 +6,7 @@
 /*------------------------------------
  1. CSS Variable
  ------------------------------------*/
-:root{
+ :root{
     /*------Color Variables------*/
     --black_900:#051605;
     --black_900_01:#000000;
@@ -97,15 +97,16 @@ Common CSS
     align-self: stretch;
     flex-direction: column;
     align-items: start;
+    width: auto;
     @media only screen and (max-width:1440px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
-        width: auto;
+        width: 100%;
+        height: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
-        width: auto;
     }
 }
 .fresh-produce-section_content {
@@ -144,17 +145,16 @@ Common CSS
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
-        width: auto;
+        width: 100%;
+        height: auto;
     }
     @media only screen and (max-width:1050px) {
         padding-top: var(--space-5xl);
         padding-bottom: var(--space-5xl);
-        width: auto;
     }
     @media only screen and (max-width:550px) {
         padding-top: var(--space-3xl);
         padding-bottom: var(--space-3xl);
-        width: auto;
     }
 }
 .agriculture-info-section_text-block {
@@ -628,17 +628,17 @@ Common CSS
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
-        width: auto;
+        width: 100%;
+        height: auto;
     }
+   
     @media only screen and (max-width:1050px) {
         padding-top: var(--space-5xl);
         padding-bottom: var(--space-5xl);
-        width: auto;
     }
     @media only screen and (max-width:550px) {
         padding-top: var(--space-3xl);
         padding-bottom: var(--space-3xl);
-        width: auto;
     }
 }
 .footer_row {
@@ -714,12 +714,10 @@ Common CSS
     padding-right: var(--space-6xl);
     gap: var(--space-6xl);
     display: flex;
-    width: auto;
     flex-direction: column;
-    @media only screen and (max-width:1050px) {
+    @media only screen and (max-width:550px) {
         padding-left: var(--space-3xl);
         padding-right: var(--space-3xl);
-        width: auto;
     }
 }
 .footer_divider {
@@ -748,5 +746,7 @@ Common CSS
     @media only screen and (max-width:1050px) {
         font-family: inter !important;
         font-weight: 50 !important;
+        width: 100%;
+        height: auto;
     }
 }
