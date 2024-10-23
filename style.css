@@ -628,7 +628,7 @@ Common CSS
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
-        width: 400%;
+        width: 800%;
     }
    
     @media only screen and (max-width:1050px) {
