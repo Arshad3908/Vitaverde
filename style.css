@@ -628,7 +628,7 @@ Common CSS
     @media only screen and (max-width:1440px) {
         padding-top: var(--space-6xl);
         padding-bottom: var(--space-6xl);
-        width: 800%;
+        width: 400%;
     }
    
     @media only screen and (max-width:1050px) {
@@ -646,13 +646,16 @@ Common CSS
     padding-right: 56px;
     display: flex;
     justify-content: center;
+    width: auto;
     @media only screen and (max-width:1440px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
+        width: 400%;
     }
     @media only screen and (max-width:1050px) {
         padding-left: var(--space-5xl);
         padding-right: var(--space-5xl);
+        width: 400%;
     }
 }
 .footer_column {
@@ -661,10 +664,10 @@ Common CSS
     width: 86%;
     flex-direction: column;
     @media only screen and (max-width:1440px) {
-        width: 15%;
+        width: 400%;
     }
     @media only screen and (max-width:1050px) {
-        width: 15%;
+        width: 400%;
     }
     @media only screen and (max-width:550px) {
         gap: var(--space-6xl);
@@ -714,9 +717,11 @@ Common CSS
     gap: var(--space-6xl);
     display: flex;
     flex-direction: column;
+    width: auto;
     @media only screen and (max-width:550px) {
         padding-left: var(--space-3xl);
         padding-right: var(--space-3xl);
+        width: 400%;
     }
 }
 .footer_divider {
@@ -728,8 +733,11 @@ Common CSS
     justify-content: space-between;
     align-items: center;
     gap: var(--space-5xl);
+    width: auto;
     @media only screen and (max-width:550px) {
         flex-direction: column;
+        align-self: start;
+        width: 400%;
     }
 }
 .footer_links {
@@ -745,5 +753,6 @@ Common CSS
     @media only screen and (max-width:1050px) {
         font-family: inter !important;
         font-weight: 50 !important;
+       
     }
 }
