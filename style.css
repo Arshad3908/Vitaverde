@@ -54,6 +54,26 @@
     --space-12xl: 116px;
 }
 
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .row {
+        height: auto;
+        padding: var(--space-4xl);
+    }
+    .fresh-produce-section_title {
+        font-size: 36px !important;
+        line-height: 1.2;
+    }
+    .fresh-produce-section_description {
+        width: 100%;
+        line-height: 1.5;
+    }
+}
+
+
 .flex-col-center-center {
     display: flex;
     flex-direction: column;
@@ -312,14 +332,15 @@ Common CSS
     width: 16px;
 }
 .agriculture-info-section_image {
-    height: 354px;
-    width: 46%;
+    height: 45vh; /* instead of fixed px */
+    width: 100%;
     object-fit: contain;
     border-radius: var(--radius-sm);
     @media only screen and (max-width:1050px) {
         width: 30%;
     }
 }
+
 .column {
     padding-left: 56px;
     padding-right: 56px;
